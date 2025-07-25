@@ -1,0 +1,42 @@
+# .github/workflows/update-readme.yml
+
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'     # setiap hari pukul 00:00 UTC
+  workflow_dispatch:        # juga bisa dijalankan manual
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # agar GITHUB_TOKEN bisa push
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run stats updater
+        run: python generate_stats.py
+
+      - name: Commit & push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet || git commit -m "chore: update GitHub stats"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
