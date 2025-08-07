@@ -1,5 +1,3 @@
-# Hi there 👋 I'm Ryougaa Hideki
-
 from datetime import datetime
 
 class AboutMe:
@@ -14,12 +12,10 @@ class AboutMe:
 
     def contact(self):
         socials = {
-            "🌐 Website"   : "https://n1k4xryougaaa.github.io",
             "🐙 GitHub"    : "https://github.com/n1k4xryougaaa",
             "📸 Instagram" : "https://instagram.com/v3n.ryougaa",
-            "▶️ YouTube"   : "https://youtube.com/@lynntheurprince",
-            "💬 Telegram"  : "https://t.me/yourusername"
-        }
+            "📘 Facebook"  : "https://www.facebook.com/Nyctophile.Schizophrenia",
+            }
         return socials
 
 me = AboutMe()
