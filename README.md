@@ -1,5 +1,7 @@
 # 👋 Hello! I'm Ryougaa Hideki
 
+**Welcome to my GitHub profile! I'm a developer who is interested in Python.**
+
 ### 🧠 About Me:
 - 🔭 I’m currently working on Python automation and obfuscation projects.
 - 🌱 Currently learning: Cybersecurity & Ethical Hacking
@@ -14,8 +16,6 @@
 
 <!-- This will be updated automatically using Python script -->
 ```python
-# Hi there 👋 I'm Ryougaa Hideki
-
 from datetime import datetime
 
 class AboutMe:
@@ -30,15 +30,33 @@ class AboutMe:
 
     def contact(self):
         socials = {
-            "🌐 Website"   : "https://n1k4xryougaaa.github.io",
             "🐙 GitHub"    : "https://github.com/n1k4xryougaaa",
             "📸 Instagram" : "https://instagram.com/v3n.ryougaa",
-            "▶️ YouTube"   : "https://youtube.com/@lynntheurprince",
-            "💬 Telegram"  : "https://t.me/yourusername"
-        }
+            "📘 Facebook"  : "https://www.facebook.com/Nyctophile.Schizophrenia",
+            }
         return socials
 
 me = AboutMe()
 print(f"Hi, I'm {me.name}, {me.age} years old! 🚀")
 print("Feel free to explore my repositories and connect with me online ✨")
 ```
+
+---
+
+### GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=n1k4xryougaaa&show_icons=true&theme=radical)
+
+---
+
+### Top Languages
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=n1k4xryougaaa&layout=compact&theme=radical)
+
+---
+
+### Connect with Me
+
+- **Instagram:** [Vennnn.....](https://instagram.com/v3n.ryougaa)
+- **Facebook:** [Ryoo Kun](https://www.facebook.com/Nyctophile.Schizophrenia)
+- **WhatsApp:** [Contack Me](https://wa.me/+6285797527437)
